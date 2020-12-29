@@ -340,7 +340,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.checkBoxCellJson);
+            //this.groupBox1.Controls.Add(this.checkBoxCellJson);
             this.groupBox1.Controls.Add(this.textBoxExculdePrefix);
             this.groupBox1.Controls.Add(label7);
             this.groupBox1.Controls.Add(label6);
@@ -377,9 +377,7 @@
             this.comboBoxSheetName.DisplayMember = "0";
             this.comboBoxSheetName.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxSheetName.FormattingEnabled = true;
-            this.comboBoxSheetName.Items.AddRange(new object[] {
-            "Yes",
-            "No"});
+            this.comboBoxSheetName.Items.AddRange(new object[] {"Yes"/*,"No"*/});
             this.comboBoxSheetName.Location = new System.Drawing.Point(114, 153);
             this.comboBoxSheetName.Name = "comboBoxSheetName";
             this.comboBoxSheetName.Size = new System.Drawing.Size(150, 20);
@@ -415,7 +413,7 @@
             this.comboBoxLowcase.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxLowcase.FormattingEnabled = true;
             this.comboBoxLowcase.Items.AddRange(new object[] {
-            "Yes",
+           // "Yes",
             "No"});
             this.comboBoxLowcase.Location = new System.Drawing.Point(114, 75);
             this.comboBoxLowcase.Name = "comboBoxLowcase";
@@ -427,12 +425,13 @@
             // 
             this.comboBoxHeader.DisplayMember = "0";
             this.comboBoxHeader.FormattingEnabled = true;
-            this.comboBoxHeader.Items.AddRange(new object[] {
+            /*this.comboBoxHeader.Items.AddRange(new object[] {
             "2",
             "3",
             "4",
             "5",
-            "6"});
+            "6"});*/
+            this.comboBoxHeader.Items.AddRange(new object[] { "3" });
             this.comboBoxHeader.Location = new System.Drawing.Point(114, 101);
             this.comboBoxHeader.Name = "comboBoxHeader";
             this.comboBoxHeader.Size = new System.Drawing.Size(150, 20);
@@ -455,9 +454,11 @@
             this.comboBoxType.DisplayMember = "0";
             this.comboBoxType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxType.FormattingEnabled = true;
-            this.comboBoxType.Items.AddRange(new object[] {
+            /*this.comboBoxType.Items.AddRange(new object[] {
             "Array",
-            "Dict Object"});
+            "Dict Object"});*/
+            this.comboBoxType.Items.AddRange(new object[] {
+            "Array"});
             this.comboBoxType.Location = new System.Drawing.Point(114, 23);
             this.comboBoxType.Name = "comboBoxType";
             this.comboBoxType.Size = new System.Drawing.Size(150, 20);

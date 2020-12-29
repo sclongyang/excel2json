@@ -51,18 +51,18 @@ namespace excel2json.GUI
 
             //-- componet init states
             this.comboBoxType.SelectedIndex = 0;
-            this.comboBoxLowcase.SelectedIndex = 1;
-            this.comboBoxHeader.SelectedIndex = 1;
+            this.comboBoxLowcase.SelectedIndex = 0;
+            this.comboBoxHeader.SelectedIndex = 0;
             this.comboBoxDateFormat.SelectedIndex = 0;
-            this.comboBoxSheetName.SelectedIndex = 1;
+            this.comboBoxSheetName.SelectedIndex = 0;
 
             this.comboBoxEncoding.Items.Clear();
             this.comboBoxEncoding.Items.Add("utf8-nobom");
-            foreach (EncodingInfo ei in Encoding.GetEncodings())
+           /* foreach (EncodingInfo ei in Encoding.GetEncodings())
             {
                 Encoding e = ei.GetEncoding();
                 this.comboBoxEncoding.Items.Add(e.HeaderName);
-            }
+            }*/
             this.comboBoxEncoding.SelectedIndex = 0;
 
             //-- button list
