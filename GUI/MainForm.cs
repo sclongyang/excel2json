@@ -291,12 +291,40 @@ namespace excel2json.GUI
             }
         }
 
+        private void saveToFile2(int type, string filter)
+        {
+
+            try
+            {
+                string toFileName = "../jsonFile/" + FileName + ".json";
+
+                lock (mDataMgr)
+                {
+                    switch (type)
+                    {
+                        case 1:
+                            mDataMgr.saveJson(toFileName);
+                            break;
+                        case 2:
+                            mDataMgr.saveCSharp(toFileName);
+                            break;
+                    }
+                }
+                showStatus(string.Format("{0} saved!", toFileName), Color.Black);
+            }
+
+            catch (Exception ex)
+            {
+                showStatus(ex.Message, Color.Red);
+            }
+        }
+
         /// <summary>
         /// 工具栏按钮：Save Json
         /// </summary>
         private void btnSaveJson_Click(object sender, EventArgs e)
         {
-            saveToFile(1, "Json File(*.json)|*.json");
+            saveToFile2(1, "Json File(*.json)|*.json");
         }
 
         /// <summary>
