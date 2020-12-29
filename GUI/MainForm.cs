@@ -310,7 +310,7 @@ namespace excel2json.GUI
                             break;
                     }
                 }
-                showStatus(string.Format("{0} saved!", toFileName), Color.Black);
+                showStatus(string.Format("{0} saved successfully ^_^ ", toFileName), Color.Black);
             }
 
             catch (Exception ex)

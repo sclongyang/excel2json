@@ -163,7 +163,7 @@
             this.statusLabel.Name = "statusLabel";
             this.statusLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.statusLabel.Size = new System.Drawing.Size(130, 17);
-            this.statusLabel.Text = "https://neil3d.github.io";
+            //this.statusLabel.Text = "https://neil3d.github.io";
             this.statusLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.statusLabel.Click += new System.EventHandler(this.statusLabel_Click);
             // 
@@ -174,12 +174,12 @@
             this.toolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnImportExcel,
             this.toolStripSeparator1,
-            this.btnCopyJSON,
+            //this.btnCopyJSON,
             this.btnSaveJson,
-            this.btnCopyCSharp,
-            this.btnSaveCSharp,
+            //this.btnCopyCSharp,
+            //this.btnSaveCSharp,
             this.toolStripSeparator2,
-            this.btnHelp});
+            /*this.btnHelp*/});
             this.toolStrip.Location = new System.Drawing.Point(0, 0);
             this.toolStrip.Name = "toolStrip";
             this.toolStrip.Size = new System.Drawing.Size(784, 46);
